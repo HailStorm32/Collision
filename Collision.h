@@ -8,8 +8,11 @@ task Collision()
 
 {
 
+
 	StartTask(Accel_Read);
 
+
+	wait1Msec(5);
 
 	while(true)
 
@@ -21,33 +24,31 @@ task Collision()
 
 			movement = 1;
 
-			while(X !< -39)
+			//	movement = 0;
 
-			{
+			//while(X != -35)
 
-				return(movement);
-			}
+			//{
+			//	movement = 1;
+
+			//}
 
 		}
 
-
-		movement = 2;
-
-		return(movement);
-
-
-
-		if(X > 1 && < 12)
+		else if(X < -35)
 
 		{
 
-			movement = 0;
+			movement = 2;
 
-			return(movement);
 
 		}
 
+
+		wait1Msec(5);
+
 	}
+
 
 
 }

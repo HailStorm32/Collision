@@ -1,9 +1,11 @@
+#include "hitechnic-accelerometer.h"
 
-float X = 0;
 
-float Y = 0;
+int X = 0;
 
-float Z = 0;
+int Y = 0;
+
+int Z = 0;
 
 
 task Accel_Read()
@@ -14,10 +16,13 @@ while(1 == 1)
 
 {
 
-HTACreadAllAxes(HTAC, X, Y, Z)
+HTACreadAllAxes(accel, X, Y, Z);
 
 
 
+nxtDisplayBigTextLine(5, "%d", X);
+
+wait1Msec(5);
 
 }
 
