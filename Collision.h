@@ -24,15 +24,6 @@ task Collision()
 
 			movement = 1;
 
-			//	movement = 0;
-
-			//while(X != -35)
-
-			//{
-			//	movement = 1;
-
-			//}
-
 		}
 
 		else if(X < -35)
