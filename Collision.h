@@ -36,6 +36,17 @@ task Collision()
 		}
 
 
+		else if(X > -4 && X < 12)
+
+		{
+
+
+			movement = 0;
+
+		}
+
+
+
 		wait1Msec(5);
 
 	}

@@ -8,38 +8,50 @@ task main()
 {
 
 	StartTask(Collision);
-	motor[motorB] = 100;
-
-	motor[motorC] = 100;
 
 	while(true)
 
 	{
 
+		wait1Msec(2000);
+
+		motor[motorB] = 100;
+
+		motor[motorC] = 100;
 
 
-		if(movement == 1)
 
-		{
-
-		nxtDisplayBigTextLine(3, "move");
-
-
-		}
-
-		else if(movement == 2)
+		while(true)
 
 		{
 
 
-			//PlaySound(soundException);
-			motor[motorB] = 0;
 
-			motor[motorC] = 0;
+			if(movement == 1)
 
+			{
+
+				//PlaySound(soundBeepBeep);
+
+				//nxtDisplayBigTextLine(3, "move");
+
+
+			}
+
+			else if(movement == 2)
+
+			{
+
+
+				//PlaySound(soundException);
+				motor[motorB] = 0;
+
+				motor[motorC] = 0;
+
+
+			}
 
 		}
 
 	}
-
 }
